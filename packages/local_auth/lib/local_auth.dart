@@ -90,7 +90,6 @@ class LocalAuthentication {
               'operating systems.',
           details: 'Your operating system is ${Platform.operatingSystem}');
     }
-    print("call auth on device");
     return _channel.invokeMethod('authenticate', args);
   }
 }
